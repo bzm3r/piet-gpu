@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76cae68c-55cb-43e7-800d-60a53f493ef2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="4kgwth91" />
+  </component>
+  <component name="ProjectId" id="1fhxfQcIYghN3BhjJ3oUEU77TqG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learn-2d-render" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="A:/rust/cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="WindowStateProjectService">
+    <state x="327" y="43" key="FileChooserDialogImpl" timestamp="1596930984708">
+      <screen x="0" y="0" width="1093" height="574" />
+    </state>
+    <state x="327" y="43" key="FileChooserDialogImpl/0.0.1093.574@0.0.1093.574" timestamp="1596930984708" />
+    <state x="56" y="0" key="SettingsEditor" timestamp="1596930569205">
+      <screen x="0" y="0" width="1093" height="574" />
+    </state>
+    <state x="56" y="0" key="SettingsEditor/0.0.1093.574@0.0.1093.574" timestamp="1596930569205" />
+    <state x="0" y="0" width="609" height="574" key="find.popup" timestamp="1597012703714">
+      <screen x="0" y="0" width="1093" height="574" />
+    </state>
+    <state x="0" y="0" width="609" height="574" key="find.popup/0.0.1093.574@0.0.1093.574" timestamp="1597012703714" />
+  </component>
+</project>

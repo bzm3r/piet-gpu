@@ -5,7 +5,7 @@ pub use render_ctx::PietGpuRenderContext;
 
 use rand::{Rng, RngCore};
 
-use piet::kurbo::{BezPath, Circle, Line, Point, Vec2};
+use piet::kurbo::{BezPath, Circle, Line, Point, Vec2, Rect, Shape};
 use piet::{Color, RenderContext};
 
 use piet_gpu_types::encoder::Encode;
@@ -38,32 +38,43 @@ pub fn render_svg(rc: &mut impl RenderContext, filename: &str, scale: f64) {
 }
 
 pub fn render_scene(rc: &mut impl RenderContext) {
-    let mut rng = rand::thread_rng();
-    for _ in 0..N_CIRCLES {
-        let color = Color::from_rgba32_u32(rng.next_u32());
-        let center = Point::new(
-            rng.gen_range(0.0, WIDTH as f64),
-            rng.gen_range(0.0, HEIGHT as f64),
-        );
-        let radius = rng.gen_range(0.0, 50.0);
-        let circle = Circle::new(center, radius);
-        rc.fill(circle, &color);
-    }
-    /*
-    let mut path = BezPath::new();
-    path.move_to((100.0, 1150.0));
-    path.line_to((200.0, 1200.0));
-    path.line_to((150.0, 1250.0));
-    path.close_path();
-    rc.fill(path, &Color::rgb8(128, 0, 128));
-    */
-    rc.stroke(
-        Line::new((100.0, 100.0), (200.0, 150.0)),
-        &Color::WHITE,
-        5.0,
-    );
+    // let mut rng = rand::thread_rng();
+    // for _ in 0..N_CIRCLES {
+    //     let color = Color::from_rgba32_u32(rng.next_u32());
+    //     let center = Point::new(
+    //         rng.gen_range(0.0, WIDTH as f64),
+    //         rng.gen_range(0.0, HEIGHT as f64),
+    //     );
+    //     let radius = rng.gen_range(0.0, 50.0);
+    //     let circle = Circle::new(center, radius);
+    //     rc.fill(circle, &color);
+    // }
+    // // let mut path = BezPath::new();
+    // path.move_to((100.0, 1150.0));
+    // path.line_to((200.0, 1200.0));
+    // path.line_to((150.0, 1250.0));
+    // path.close_path();
+    // rc.fill(path, &Color::rgb8(128, 0, 128));
+    // rc.stroke(
+    //     Line::new((100.0, 100.0), (200.0, 150.0)),
+    //     &Color::WHITE,
+    //     5.0,
+    // );
+    render_simple(rc);
     //render_cardioid(rc);
-    render_tiger(rc);
+    //render_tiger(rc);
+}
+
+#[allow(unused)]
+fn render_simple(rc: &mut impl RenderContext) {
+    let mut path = BezPath::new();
+    path.move_to(Point::new(100.0, 100.0));
+    path.line_to(Point::new(900.0, 100.0));
+    path.line_to(Point::new(900.0, 900.0));
+    path.line_to(Point::new(100.0, 900.0));
+    path.close_path();
+    rc.stroke(&path, &Color::BLACK, 20.0);
+    rc.fill(&path, &Color::WHITE)
 }
 
 #[allow(unused)]
